@@ -251,12 +251,10 @@ class User:
         INSERT INTO users (uid,firstname,lastname,email,password)
         VALUES(%s,%s,%s,%s,%s)
         """
-        # %(user_id,user_firstname,user_lastname,user_email,hashed)
-        # print(register_user_query)
-        # user_details = [(user_id,user_firstname,user_lastname,user_email,hashed)]
+        
         user_details = (user_id,user_firstname,user_lastname,user_email,hashed)
         try:
-            # cursor.executemany(register_user_query,user_details)
+          
             cursor.execute(register_user_query,user_details)
             connection.commit()
             mb.showinfo('Information',f'Registration Successful! \n Your user Id is {user_id} kindly save it for later purposes')

@@ -3,7 +3,7 @@ def db_connect():
     connection = connect(
             host = "localhost",
             username = "root",
-            password = "homoakin619",
+            password = "",
             database = "Mystore"
         )
     return connection

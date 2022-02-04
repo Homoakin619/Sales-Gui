@@ -1,4 +1,3 @@
-from distutils import command
 import tkinter as tk
 from tkinter import Frame, StringVar, Toplevel
 from tkinter import messagebox as mb
